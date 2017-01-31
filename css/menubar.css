@@ -1,0 +1,11 @@
+.menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  height: 70px;
+  background: #e2e2e2;
+
+  z-index: 1;
+}
