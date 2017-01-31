@@ -1,11 +1,57 @@
 .menubar {
+  display: flex;
+  justify-content: flex-end;
+
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100% - 300px);
-  margin-left: 300px;
-  height: 70px;
-  background: #e2e2e2;
 
+  width: calc(100% - 300px);
+  height: 70px;
+
+  margin-left: 300px;
+  background: #e2e2e2;
   z-index: 1;
+}
+
+.userMenu {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.userMenu::before {
+  display: block;
+  content: "\f2be";
+
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px;
+
+  cursor: pointer;
+}
+
+.userMenu:hover ul {
+  display: block;
+}
+
+.userMenu ul {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  display: none;
+  width: 220px;
+  padding: 10px 0;
+
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.15);
+}
+
+.userMenu li {
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.userMenu li:hover {
+  background: lightgrey;
 }

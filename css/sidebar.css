@@ -4,7 +4,44 @@
   left: 0;
   width: 300px;
   height: 100%;
-  background: blue;
-
   z-index: 1;
+  background-color: #e2e2e2;
+  border-right: 1px solid lightgrey;
+  overflow: hidden;
+
+}
+
+.sidebarMenu {
+  width: calc(100% + 20px);
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.sidebarMenuItem:hover .sidebarSubmenu {
+  display: block;
+}
+
+.sidebarMenuItem > div {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.sidebarMenuItem > div:hover {
+  background: lightgrey;
+}
+
+.sidebarSubmenu {
+  display: none;
+}
+
+.sidebarSubmenuItem {
+  height: 50px;
+  line-height: 30px;
+  padding: 10px 10px 10px 20px;
+}
+
+.sidebarSubmenuItem:hover {
+  background: lightblue;
 }
