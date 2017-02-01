@@ -17,20 +17,52 @@
   overflow-y: scroll;
 }
 
+.sidebarMenuItem {
+  position: relative;
+  height: 50px;
+}
+
+.sidebarMenuItem:hover {
+  height: auto;
+}
+
 .sidebarMenuItem:hover .sidebarSubmenu {
   display: block;
 }
 
 .sidebarMenuItem > div {
+  position: relative;
   width: 300px;
   height: 50px;
-  padding: 10px;
+  padding: 10px 10px 10px 60px;
   line-height: 30px;
 }
 
 .sidebarMenuItem > div:hover {
-  background: lightgrey;
+  /*background: lightgrey;*/
 }
+
+.sidebarMenuItem::before {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: block;
+  z-index: 1;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: 'FontAwesome';
+  text-align: center;
+}
+
+.sidebarMenuItem.apple::before      { content: '\f179';}
+.sidebarMenuItem.behance::before    { content: '\f1b4';}
+.sidebarMenuItem.facebook::before   { content: '\f09a';}
+.sidebarMenuItem.trello::before     { content: '\f181';}
+.sidebarMenuItem.github::before     { content: '\f09b';}
+.sidebarMenuItem.pied-piper::before { content: '\f1a8';}
+.sidebarMenuItem.mode::before       { content: '\f1a8';}
 
 .sidebarSubmenu {
   display: none;
@@ -39,9 +71,18 @@
 .sidebarSubmenuItem {
   height: 50px;
   line-height: 30px;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 60px;
 }
 
 .sidebarSubmenuItem:hover {
   background: lightblue;
+}
+
+.sidebarSubmenuItem:first-child {
+  display: none;
+}
+.sidebarSubmenuItem:last-child {
+  position: absolute;
+  bottom: 0;
+  left: 0
 }
