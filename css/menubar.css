@@ -29,10 +29,6 @@
   cursor: pointer;
 }
 
-.userMenu:hover ul {
-  display: block;
-}
-
 .userMenu ul {
   position: absolute;
   top: 70px;
@@ -44,11 +40,15 @@
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.15);
 }
 
+.userMenu:hover ul {
+  display: block;
+}
+
 .userMenu li {
   position: relative;
   z-index: 1;
   padding: 0 10px;
-  line-height: 30px;
+  line-height: 50px;
   cursor: pointer;
 }
 

@@ -1,4 +1,7 @@
 @import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic');
+@import 'font-awesome.css';
+
 @import 'basic.css';
 
 @import 'menubar.css';
@@ -9,6 +12,3 @@
 
 @import 'content.css';
 @import 'content_compact.css';
-
-@import 'font-awesome.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic');

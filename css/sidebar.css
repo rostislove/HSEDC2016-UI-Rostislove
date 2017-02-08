@@ -2,13 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 300px;
   height: 100%;
-  z-index: 1;
-  background-color: #e2e2e2;
   border-right: 1px solid lightgrey;
   overflow: hidden;
-
 }
 
 .sidebarMenu {
@@ -39,21 +37,27 @@
 }
 
 .sidebarMenuItem > div:hover {
-  /*background: lightgrey;*/
+  background: lightgrey;
 }
 
 .sidebarMenuItem::before {
   position: absolute;
   top: 0;
   left: 10px;
-  display: block;
   z-index: 1;
-  width: 30px;
+  display: block;
+  width: 40px;
   height: 50px;
   line-height: 50px;
   font-size: 20px;
-  font-family: 'FontAwesome';
+  font-family: FontAwesome;
   text-align: center;
+}
+
+.sidebarMenuItem:last-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .sidebarMenuItem.apple::before      { content: '\f179';}
@@ -70,19 +74,14 @@
 
 .sidebarSubmenuItem {
   height: 50px;
-  line-height: 30px;
   padding: 10px 10px 10px 60px;
+  line-height: 30px;
 }
 
 .sidebarSubmenuItem:hover {
-  background: lightblue;
+  background: lightgrey;
 }
 
 .sidebarSubmenuItem:first-child {
   display: none;
-}
-.sidebarSubmenuItem:last-child {
-  position: absolute;
-  bottom: 0;
-  left: 0
 }

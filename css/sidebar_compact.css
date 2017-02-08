@@ -3,11 +3,7 @@
   overflow: visible;
 }
 
-/*.compact .sidebarMenuItem > div {
-  display: none;
-}*/
-
-.compact .sidebarMenuItem > div{
+.compact .sidebarMenuItem > div {
   display: none;
 }
 
@@ -15,20 +11,26 @@
   height: 50px;
   background: lightgrey;
 }
-.compact .sidebarMenuItem.mode::before { content: ""};
+
+.compact .sidebarMenuItem.mode::before {
+  content: '\f054';
+}
 
 .compact .sidebarMenu {
-  width: 100%;
+  width: 60px;
   overflow-y: visible;
 }
 
 .compact .sidebarSubmenu {
   position: absolute;
   left: 60px;
+  /*top: 70px;*/
+  /*right: 10px;*/
+  /*display: none;*/
   width: 220px;
   padding: 0 0 10px;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
-  background: light;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+  background: white;
 }
 
 .compact .sidebarSubmenuItem {
@@ -58,18 +60,18 @@
   background: white;
 }
 
-.compact  .sidebarSubmenu::before {
+.compact .sidebarSubmenu::before {
   top: 15px;
-  right: -8px;
+  left: -8px;
   width: 20px;
   height: 20px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
   transform: rotate(45deg);
 }
 
-.compact  .sidebarSubmenu::after {
-  top: 0px;
-  right: 0px;
+.compact .sidebarSubmenu::after {
+  top: 0;
+  left: 0;
   width: 30px;
-  height: 30px;
+  height: 50px;
 }
